@@ -1,0 +1,21 @@
+피버모드의 정의
+
+피버 게이지라는 게 존재하는데 2콤보당 1칸씩 증가하며 5칸을 채우면 피버 모드로 들어간다. 
+피버 모드에서는 모든 점수가 두 배씩 상승되며 피버 모드라는 효과음이 연출되고
+각종 효과음도 살짝(피버모드스럽게) 바뀐다.
+
+피버 게이지는 상단 UI 부분에 출력되며 5칸이 다 찰 경우 피버 모드로 전환하고
+0칸으로 초기화되며 피버 모드가 끝날 때 까지는 피버 게이지는 차지 않는다.
+피버 모드 (10초 ) 가 끝나면 다시 채울 수 있다.
+
+
+다음 변수를 체크해 본다
+Nexon.UIfeverMode:Booelan = false;
+
+Nexon.UIfeverModegage:int = 0;
+
+Nexon.UIfeverModeTime:int = 30 * 10; //상수
+
+Nexon.UIfeverModePerRequestCombo = 2; //상수
+
+Nexon.UIfeverModeRemainTime:int = UIfeverModeTime;
